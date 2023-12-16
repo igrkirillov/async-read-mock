@@ -3,6 +3,10 @@ import read from "../reader";
 
 jest.mock("../reader");
 
+beforeEach(() => {
+  jest.resetAllMocks();
+});
+
 describe('GameSavingLoader module', () => {
   test ('successful case', (done) => {
     expect.assertions(1);
